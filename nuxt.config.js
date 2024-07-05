@@ -1,7 +1,10 @@
 export default {
+  serverMiddleware: [
+    '~/api/index.js'
+  ],
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'dc-util',
+    title: '유틸리티 웹',
     htmlAttrs: {
       lang: 'en',
     },
@@ -27,6 +30,7 @@ export default {
   buildModules: [
     // https://go.nuxtjs.dev/eslint
     '@nuxtjs/eslint-module',
+    '@nuxtjs/dotenv'
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
